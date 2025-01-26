@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Untitled](README.md)
+* [Bridging the MEG Gap](README.md)
 
 ## Getting Started
 
