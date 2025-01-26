@@ -1,7 +1,7 @@
 ---
 icon: hand-wave
 cover: .gitbook/assets/llogo_dark (1).png
-coverY: 0
+coverY: 233.61066666666665
 layout:
   cover:
     visible: true
