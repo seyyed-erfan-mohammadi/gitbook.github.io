@@ -164,12 +164,7 @@ MEGAP includes a warning system to simplify pre-processing reporting and ensure 
 
 If any of these thresholds are exceeded during processing, a warning is logged in the text file. For instance:
 
-```svg
-// Some code
-hhjghjgjh
-hbjhbh
-```
-
+{% code fullWidth="true" %}
 ```markup
 __________Zapline_Plus__________
 Warning: zapline_plus removed 38.0 magnetometer components, which exceeds the threshold of 30 components.
@@ -184,5 +179,6 @@ There are 22 bad channels out of 248 total channels in the dataset.
 Please check the bad channels and consider reprocessing or correcting the data.
 
 ```
+{% endcode %}
 
 </details>
