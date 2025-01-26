@@ -1,7 +1,7 @@
 ---
 icon: hand-wave
-cover: .gitbook/assets/llogo_dark (1).png
-coverY: 233.61066666666665
+cover: .gitbook/assets/llogo_dark (2).png
+coverY: 0
 layout:
   cover:
     visible: true
@@ -18,7 +18,7 @@ layout:
     visible: true
 ---
 
-# 🧠 MEGAP or MEG Gap!
+# MEGAP or MEG Gap!
 
 Magnetoencephalography (MEG) offers unparalleled insights into the brain’s dynamic activity, but its potential is often hindered by the "gap" between raw data and analysis-ready signals. \
 \
