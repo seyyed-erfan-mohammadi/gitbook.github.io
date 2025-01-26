@@ -5,7 +5,7 @@
 ## Basic information
 
 * [Core Features](basic-information/quickstart.md)
-* [Publish your docs](basic-information/publish-your-docs.md)
+* [Folder Structure](basic-information/folder-structure.md)
 
 ## Getting Started
 
