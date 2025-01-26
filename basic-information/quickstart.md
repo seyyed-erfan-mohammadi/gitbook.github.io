@@ -146,8 +146,6 @@ Closing /MEGAP/result/multi_taper_removal/sub-CC10.fif
 
 </details>
 
-
-
 <details>
 
 <summary><strong>7. Warning for Data Quality Monitoring</strong></summary>
@@ -165,6 +163,12 @@ MEGAP includes a warning system to simplify pre-processing reporting and ensure 
 ```
 
 If any of these thresholds are exceeded during processing, a warning is logged in the text file. For instance:
+
+```svg
+// Some code
+hhjghjgjh
+hbjhbh
+```
 
 ```markup
 __________Zapline_Plus__________
