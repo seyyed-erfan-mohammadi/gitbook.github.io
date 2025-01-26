@@ -127,6 +127,7 @@ MEGAP verbose files for each subject, saved in the `/result/verbose/` folder wit
 
 For example, a snippet from a verbose file might look like this:
 
+{% code overflow="wrap" %}
 ```
 ____________________multi_taper_removal____________________
 Start time: 2025-01-01 12:00:00 
@@ -143,6 +144,7 @@ Writing /MEGAP/result/multi_taper_removal/sub-CC10.fif
 Closing /MEGAP/result/multi_taper_removal/sub-CC10.fif
 [done]
 ```
+{% endcode %}
 
 </details>
 
@@ -164,7 +166,7 @@ MEGAP includes a warning system to simplify pre-processing reporting and ensure 
 
 If any of these thresholds are exceeded during processing, a warning is logged in the text file. For instance:
 
-{% code fullWidth="true" %}
+{% code overflow="wrap" fullWidth="true" %}
 ```markup
 __________Zapline_Plus__________
 Warning: zapline_plus removed 38.0 magnetometer components, which exceeds the threshold of 30 components.
