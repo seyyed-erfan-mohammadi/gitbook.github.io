@@ -5,26 +5,26 @@ coverY: 0
 layout:
   cover:
     visible: true
-    size: full
+    size: hero
   title:
     visible: true
   description:
     visible: false
   tableOfContents:
-    visible: true
+    visible: false
   outline:
-    visible: true
+    visible: false
   pagination:
     visible: true
 ---
 
-# MEGAP or MEG Gap!
+# 🧠 MEGAP or MEG Gap!
 
 Magnetoencephalography (MEG) offers unparalleled insights into the brain’s dynamic activity, but its potential is often hindered by the "gap" between raw data and analysis-ready signals. \
 \
-Traditional pre-processing workflows are fragmented, labor-intensive, and prone to inconsistencies—especially for large-scale datasets. Enter **MEGAP** (_MEG Automatic Pipeline_), a groundbreaking solution designed to bridge this critical gap. By automating noise removal, artifact correction, and standardization, MEGAP transforms the chaos of raw MEG data into clean, reproducible outputs. This pipeline not only addresses the limitations of existing tools—such as manual parameter tuning, incomplete artifact handling, and reliance on outdated filtering methods—but also empowers researchers to unlock the full potential of MEG with unprecedented efficiency.
+Traditional pre-processing workflows are fragmented, labor-intensive, and prone to inconsistencies—especially for large-scale datasets. Enter **MEGAP** (MEG Automatic Pipeline), a groundbreaking solution designed to bridge this critical gap. By automating noise removal, artifact correction, and standardization, MEGAP transforms the chaos of raw MEG data into clean, reproducible outputs. This pipeline not only addresses the limitations of existing tools—such as manual parameter tuning, incomplete artifact handling, and reliance on outdated filtering methods—but also empowers researchers to unlock the full potential of MEG with unprecedented efficiency.
 
-_Welcome to the future of MEG pre-processing. Let’s close the gap._
+Welcome to the future of MEG pre-processing. Let’s close the gap.
 
 ### Jump right in
 
