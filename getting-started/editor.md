@@ -1,38 +1,85 @@
 ---
-icon: pen-to-square
+icon: folder-arrow-down
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: false
+  pagination:
+    visible: true
 ---
 
-# Editor
-
-GitBook has a powerful block-based editor that allows you to seamlessly create, update, and enhance your content.
-
-<figure><img src="https://gitbookio.github.io/onboarding-template-images/editor-hero.png" alt=""><figcaption></figcaption></figure>
-
-### Writing content
-
-GitBook offers a range of block types for you to add to your content inline — from simple text and tables, to code blocks and more. These elements will make your pages more useful to readers, and offer extra information and context.
-
-Either start typing below, or press `/` to see a list of the blocks you can insert into your page.
-
-### Add a new block
+# Installing
 
 {% stepper %}
 {% step %}
-### Open the insert block menu
+**Clone the Repository**
 
-Press `/` on your keyboard to open the insert block menu.
+```
+git clone https://github.com/BNARGroup/MEGAP.git
+cd MEGAP
+```
 {% endstep %}
 
 {% step %}
-### Search for the block you need&#x20;
+**Install Required Packages**
 
-Try searching for “Stepper”, for exampe, to insert the stepper block.
+Install necessary packages, including MNE, MNE-BIDS, TensorFlow, MATLAB Engine, and any other dependencies:
+
+```
+pip install -r requirements.txt
+```
 {% endstep %}
 
 {% step %}
-### Insert and edit your block
+**Copy Required Repositories**
 
-Click or press Enter to insert your block. From here, you’ll be able to edit it as needed.
+Clone the following repositories into the config folder of MEGAP:
+
+* [mne-matlab](https://github.com/mne-tools/mne-matlab)
+* [MegNET\_2020](https://github.com/DeepLearningForPrecisionHealthLab/MegNET_2020)
+* [zapline-plus](https://github.com/MariusKlug/zapline-plus)
+* [eeglab](https://github.com/sccn/eeglab)
+{% endstep %}
+
+{% step %}
+**Add Data to MEGAP**
+
+Place MEG data organized in the MEG-BIDS structure into the `result/raw` folder of MEGAP. Additionally, include the fine calibration file and a cross-talk compensation file in the `result/config` folder.
+{% endstep %}
+
+{% step %}
+**Execute the MEGAP Script**
+
+You can now run MEGAP using the `MEGAP.py` script and let it pre-process all of your data without any manual intervention.
+
+MEGAP will automatically verify all necessary folders and notify you if anything is missing.
+
+```
++--------------------------------------------+--------+
+|               Required Item                | Status |
++--------------------------------------------+--------+
+|               Config Folder                | ✔️ OK  |
+|                 Raw Folder                 | ✔️ OK  |
+|           CFG Configuration File           | ✔️ OK  |
+|            SSS Calibration File            | ✔️ OK  |
+|              Cross-talk File               | ✔️ OK  |
+| Zapline-plus-main folder from their github | ✔️ OK  |
+|  eeglab-develop folder from their github   | ✔️ OK  |
+| mne-matlab-master folder from their github | ✔️ OK  |
+|  CNN Model folder from MegNET_2020 github  | ✔️ OK  |
++--------------------------------------------+--------+
+*** All necessary folders exist for running MEGAP ***
+```
+{% endstep %}
+
+{% step %}
+### Outputs
+
+Upon completion of the pipeline, the output power spectra plots can be located in the ‘PSD’ folders, while the output text files will be found in the ‘verbose’ folder. The supplementary materials provide a detailed description of the folder structure and contents in the ‘Details of MEGAP Folder Structure’ section.
 {% endstep %}
 {% endstepper %}
-

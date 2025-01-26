@@ -9,7 +9,7 @@
 
 ## Getting Started
 
-* [Editor](getting-started/editor.md)
+* [Installing](getting-started/editor.md)
 * [Markdown](getting-started/markdown.md)
 * [Images & media](getting-started/images-and-media.md)
 * [Interactive blocks](getting-started/interactive-blocks.md)
