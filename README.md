@@ -1,11 +1,11 @@
 ---
 icon: hand-wave
-cover: .gitbook/assets/llogo_dark.png
+cover: .gitbook/assets/llogo_dark (1).png
 coverY: 0
 layout:
   cover:
     visible: true
-    size: hero
+    size: full
   title:
     visible: true
   description:
