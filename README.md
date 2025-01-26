@@ -7,7 +7,7 @@ layout:
     visible: true
     size: hero
   title:
-    visible: true
+    visible: false
   description:
     visible: false
   tableOfContents:
@@ -18,7 +18,9 @@ layout:
     visible: true
 ---
 
-# MEGAP or MEG Gap!
+# Untitled
+
+**A Comprehensive Pipeline for Automatic Pre-processing of MEG Data**
 
 Magnetoencephalography (MEG) offers unparalleled insights into the brain’s dynamic activity, but its potential is often hindered by the "gap" between raw data and analysis-ready signals. \
 \

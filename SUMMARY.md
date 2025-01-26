@@ -1,6 +1,6 @@
 # Table of contents
 
-* [MEGAP or MEG Gap!](README.md)
+* [Untitled](README.md)
 
 ## Getting Started
 
