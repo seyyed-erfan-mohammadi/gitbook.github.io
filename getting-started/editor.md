@@ -38,7 +38,7 @@ pip install -r requirements.txt
 {% step %}
 **Copy Required Repositories**
 
-Clone the following repositories into the config folder of MEGAP:
+Clone the following repositories into the `/config` folder of MEGAP:
 
 * [mne-matlab](https://github.com/mne-tools/mne-matlab)
 * [MegNET\_2020](https://github.com/DeepLearningForPrecisionHealthLab/MegNET_2020)
@@ -59,6 +59,7 @@ You can now run MEGAP using the `MEGAP.py` script and let it pre-process all of 
 
 MEGAP will automatically verify all necessary folders and notify you if anything is missing.
 
+{% code fullWidth="true" %}
 ```
 +--------------------------------------------+--------+
 |               Required Item                | Status |
@@ -75,6 +76,7 @@ MEGAP will automatically verify all necessary folders and notify you if anything
 +--------------------------------------------+--------+
 *** All necessary folders exist for running MEGAP ***
 ```
+{% endcode %}
 {% endstep %}
 
 {% step %}
