@@ -2,16 +2,16 @@
 
 * [Bridging the MEG Gap](README.md)
 
+## Basic information
+
+* [Core Features](basic-information/quickstart.md)
+* [Publish your docs](basic-information/publish-your-docs.md)
+
 ## Getting Started
 
-* [Quickstart](getting-started/quickstart.md)
-* [Publish your docs](getting-started/publish-your-docs.md)
-
-## Basics
-
-* [Editor](basics/editor.md)
-* [Markdown](basics/markdown.md)
-* [Images & media](basics/images-and-media.md)
-* [Interactive blocks](basics/interactive-blocks.md)
-* [OpenAPI](basics/openapi.md)
-* [Integrations](basics/integrations.md)
+* [Editor](getting-started/editor.md)
+* [Markdown](getting-started/markdown.md)
+* [Images & media](getting-started/images-and-media.md)
+* [Interactive blocks](getting-started/interactive-blocks.md)
+* [OpenAPI](getting-started/openapi.md)
+* [Integrations](getting-started/integrations.md)
