@@ -146,3 +146,39 @@ Closing /MEGAP/result/multi_taper_removal/sub-CC10.fif
 
 </details>
 
+
+
+<details>
+
+<summary><strong>7. Warning for Data Quality Monitoring</strong></summary>
+
+MEGAP includes a warning system to simplify pre-processing reporting and ensure data quality. This system generates a warning text file in the `result/warning/` folder, which flags potential issues based on user-defined thresholds. These thresholds are specified in the `pipeline_config.cfg` file under the `warning` section, allowing users to customize sensitivity for various metrics. For example:
+
+```markup
+"warning": {
+    "muscle": 10,        # Percentage of data affected by muscle artifacts
+    "movement": 0.003,   # Maximum head movement (in meters)
+    "zapline_plus": 30,  # Maximum number of line noise components removed per coil type
+    "bad_channel": 6,    # Maximum number of bad channels detected
+    "ica": 5             # Maximum number of ICA components rejected
+}
+```
+
+If any of these thresholds are exceeded during processing, a warning is logged in the text file. For instance:
+
+```markup
+__________Zapline_Plus__________
+Warning: zapline_plus removed 38.0 magnetometer components, which exceeds the threshold of 30 components.
+This suggests the presence of significant line noise in the data. Please check the magnetometer data.
+
+__________Muscle Artifact__________
+muscle annotations covering 60.30s, more than 10.0% of total duration (400.00s). Check the data and Z-score parameter (current value: 15).
+
+__________Bad Channel__________
+Warning: 22 bad channels detected, exceeding the threshold of 6 bad channels.
+There are 22 bad channels out of 248 total channels in the dataset.
+Please check the bad channels and consider reprocessing or correcting the data.
+
+```
+
+</details>
