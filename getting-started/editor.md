@@ -17,7 +17,7 @@ layout:
 
 {% stepper %}
 {% step %}
-**Clone the Repository**
+### **Clone the Repository**
 
 ```
 git clone https://github.com/BNARGroup/MEGAP.git
@@ -26,7 +26,7 @@ cd MEGAP
 {% endstep %}
 
 {% step %}
-**Install Required Packages**
+### **Install Required Packages**
 
 Install necessary packages, including MNE, MNE-BIDS, TensorFlow, MATLAB Engine, and any other dependencies:
 
@@ -36,7 +36,7 @@ pip install -r requirements.txt
 {% endstep %}
 
 {% step %}
-**Copy Required Repositories**
+### **Copy Required Repositories**
 
 Clone the following repositories into the `/config` folder of MEGAP:
 
@@ -47,13 +47,13 @@ Clone the following repositories into the `/config` folder of MEGAP:
 {% endstep %}
 
 {% step %}
-**Add Data to MEGAP**
+### **Add Data to MEGAP**
 
 Place MEG data organized in the MEG-BIDS structure into the `result/raw` folder of MEGAP. Additionally, include the fine calibration file and a cross-talk compensation file in the `result/config` folder.
 {% endstep %}
 
 {% step %}
-**Execute the MEGAP Script**
+### **Execute the MEGAP Script**
 
 You can now run MEGAP using the `MEGAP.py` script and let it pre-process all of your data without any manual intervention.
 
@@ -82,6 +82,6 @@ MEGAP will automatically verify all necessary folders and notify you if anything
 {% step %}
 ### Outputs
 
-Upon completion of the pipeline, the output power spectra plots can be located in the ‘PSD’ folders, while the output text files will be found in the ‘verbose’ folder. The supplementary materials provide a detailed description of the folder structure and contents in the ‘Details of MEGAP Folder Structure’ section.
+Upon completion of the pipeline, the output power spectra plots can be located in the ‘PSD’ folders, while the output text files will be found in the ‘verbose’ folder.&#x20;
 {% endstep %}
 {% endstepper %}
