@@ -60,3 +60,6 @@ In MEGAP, a customized version of the ZapLine-Plus main script is included, wher
 {% hint style="info" %}
 If you need to adjust the minimum frequency operation, you can modify the script `clean_data_with_zapline_plus.m`, located in the MEGAP folder.
 {% endhint %}
+
+#### Zapline\_plus Warning
+

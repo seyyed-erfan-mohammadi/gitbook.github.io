@@ -19,3 +19,8 @@
 * [Line noise](getting-started/integrations/README.md)
   * [Zapline\_Plus](getting-started/integrations/zapline_plus.md)
   * [Regression](getting-started/integrations/regression.md)
+* [Muscle Artifact](getting-started/muscle-artifact.md)
+
+***
+
+* [Page 1](page-1.md)
