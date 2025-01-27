@@ -27,10 +27,11 @@ After determining the head position using cHPI coils, the next step is to remove
 },
 ```
 
-<figure><img src="../.gitbook/assets/llogo_dark (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/susb-CC120208.png" alt=""><figcaption><p>After filtering cHPI coil noises</p></figcaption></figure>
 
 {% hint style="info" %}
 By default, `filter_chpi` command also includes a notch filter for removing line noises. However, we disable this feature and postpone line noise removal to the next step in MEGAP.
 {% endhint %}
 
 In CTF devices, the contribution from each cHPI coil is extracted through [spectral line extraction](https://www.sciencedirect.com/science/article/pii/S1053811912011597?via%3Dihub), which eliminates the need for running the `filter_chpi` command. This is because the CTF system does not exhibit any distinct peaks in PSDs for cHPI signals, as it uses a different method to monitor and track head positions. Therefore, the procedure for filtering noise from cHPI coils is not required for CTF data.
+

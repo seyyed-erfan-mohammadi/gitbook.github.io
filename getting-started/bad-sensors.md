@@ -1,8 +1,19 @@
 ---
 icon: '7'
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: false
+  pagination:
+    visible: true
 ---
 
-# Bad sensors
+# Bad Sensors
 
 ### MEGIN Devices
 
@@ -20,11 +31,35 @@ Bad sensors can significantly affect the (pre)processing steps. In MEGAP, the [f
 },
 ```
 
-The locations of bad sensors and their scores are plotted and saved in the **plot\_bad\_channel** folder.
+The locations of bad sensors and their scores are plotted and saved in the `/plot_bad_channel` folder. Additionally, the names of the bad channels are displayed on the right side of each plot.
 
+<figure><img src="../.gitbook/assets/figure 5.png" alt=""><figcaption><p>(A) Locations of magnetometer sensors (the bad sensor is represented in red), (B) and (C) magnetometers’ scores before and after applying the threshold, respectively.</p></figcaption></figure>
 
+### CTF/BTI Devices
 
+For CTF and BTI devices, where Maxwell filtering isn't available, bad sensors are identified using several methods:
 
+1. **Deviation**: Detects channels with unusually high or low overall amplitudes.
+2. **Correlation**: Identifies channels that don't correlate with others.
+3. **High Frequency Noise**: Detects channels with excessive high-frequency noise.
+4. **RANSAC**: Finds channels that are poorly predicted by other channels.
+5. **SNR (Signal-to-Noise Ratio)**: Flags channels with low SNR, which are bad in both high-frequency noise and low correlation.
 
-### CTF/BTI Dvices
+These methods, from the [PyPREP](https://zenodo.org/records/10047462) on bad channel detection, help in identifying and excluding problematic channels for cleaner data analysis. The threshold for these bad channel detection methods can be adjusted in the "bad\_channel\_nonmaxwell" section of the configuration file.
 
+```json
+"bad_channel_nonmaxwell": {
+    "deviation_thresh" : 5,
+    "correlation_thresh": 0.4,
+    "hf_thresh": 5,
+    "snr_enabled" : true
+},
+```
+
+{% hint style="info" %}
+RANSAC is used from the [autoreject](https://autoreject.github.io/stable/index.html) library.
+{% endhint %}
+
+### Warning on Number of Bad Sensors
+
+In the MEGAP pipeline, a warning is triggered if the number of bad sensors exceeds a defined threshold. This threshold is set in the [config\_pipeline.cfg](../basic-information/quickstart.md#id-7.-warning-for-data-quality-monitoring) file. When the number of bad sensors for each coil type (mag or grad) goes beyond the limit, the warning is saved in the `/warning` folder within the results directory.
