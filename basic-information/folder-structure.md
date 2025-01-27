@@ -172,8 +172,8 @@ Contains raw MEG signals organized in the BIDS format, ensuring compatibility wi
 
 <summary><strong>Logs Output</strong></summary>
 
-* **`verbose/`**: Detailed log files generated during the pipeline's execution. These provide a record of processing steps, warnings, and debug information for troubleshooting.
-* **`warning/`**:Contains warning logs generated during the pipeline’s execution. Each file is named after the corresponding subject (e.g., `sub_01.txt)`.
+* **`verbose/`**: Detailed log files generated during the pipeline's execution. These provide a record of processing steps and debug information for troubleshooting.
+* **`warning/`**:Contains warning logs generated during the pipeline’s execution with the help of [user threshold](quickstart.md#id-7.-warning-for-data-quality-monitoring). Each file is named after the corresponding subject (e.g., `sub_01.txt)`.
 
 </details>
 
