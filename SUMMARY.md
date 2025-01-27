@@ -18,4 +18,4 @@
 * [Filter cHPI](getting-started/openapi.md)
 * [Line noise](getting-started/integrations/README.md)
   * [Zapline\_Plus](getting-started/integrations/zapline_plus.md)
-  * [regression](getting-started/integrations/regression.md)
+  * [Regression](getting-started/integrations/regression.md)
