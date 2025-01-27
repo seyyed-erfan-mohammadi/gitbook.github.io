@@ -87,7 +87,7 @@ The `config` folder contains essential files, repositories, and configuration pa
 
 <summary><strong>Raw Data: <code>raw/</code></strong></summary>
 
-Contains raw MEG signals organized in the BIDS (Brain Imaging Data Structure) format, ensuring compatibility with standardized neuroimaging pipelines.
+Contains raw MEG signals organized in the BIDS format, ensuring compatibility with standardized neuroimaging pipelines.
 
 </details>
 
@@ -151,7 +151,7 @@ Contains raw MEG signals organized in the BIDS (Brain Imaging Data Structure) fo
 
 <summary><strong>ICA: <code>ICA/</code></strong></summary>
 
-* **`ICA/`**: Final pre-process results (BIDS structure)
+* **`ICA/`**: Final Pre-processed Data in BIDS Format
 * **`PSD_ICA/`**: PSD of data after ICA.
 * **`plot_ICA/`**: ICA component plots for each participant, organized by participant ID.
 
