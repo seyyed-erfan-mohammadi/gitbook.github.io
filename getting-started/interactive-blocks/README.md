@@ -50,7 +50,7 @@ The step size balances accuracy and speed in amplitude estimation. Elekta recomm
 
 ### CTF devices
 
-The `extract_chpi_locs_ctf` function is used to retrieve head position information from CTF data. In CTF systems, the x, y, and z coordinates (in meters) of each cHPI coil are stored as individual channels within the dataset.
+The [`extract_chpi_locs_ctf`](https://mne.tools/stable/generated/mne.chpi.extract_chpi_locs_ctf.html) function is used to retrieve head position information from CTF data. In CTF systems, the x, y, and z coordinates (in meters) of each cHPI coil are stored as individual channels within the dataset.
 
 {% hint style="info" %}
 MEGAP automatically checks whether cHPI data is present and identifies the type of MEG system being used. Based on this information, it then selects the appropriate method to extract head position data, ensuring compatibility with both MEGIN and CTF systems.
