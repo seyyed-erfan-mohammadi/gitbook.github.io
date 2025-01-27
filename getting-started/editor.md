@@ -21,7 +21,7 @@ MEGAP has been evaluated on Windows 10 (Intel i7-1156G7 CPU, 24GB RAM) and macOS
 {% step %}
 ### **Clone the Repository**
 
-```
+```bash
 git clone https://github.com/BNARGroup/MEGAP.git
 cd MEGAP
 ```
@@ -32,7 +32,7 @@ cd MEGAP
 
 Install necessary packages, including MNE, MNE-BIDS, TensorFlow, MATLAB Engine, and any other dependencies:
 
-```
+```bash
 pip install -r requirements.txt
 ```
 {% endstep %}
@@ -62,7 +62,7 @@ You can now run MEGAP using the `MEGAP.py` script and let it pre-process all of 
 MEGAP will automatically verify all necessary folders and notify you if anything is missing.
 
 {% code fullWidth="true" %}
-```
+```python
 +--------------------------------------------+--------+
 |               Required Item                | Status |
 +--------------------------------------------+--------+

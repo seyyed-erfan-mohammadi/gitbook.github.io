@@ -25,7 +25,7 @@ MEGAP runs seamlessly from start to finish without requiring manual intervention
 
 MEGAP processes data through a structured sequence of pre-defined steps (e.g., noise removal, artifact correction), applying each step to all subjects in a dataset before advancing to the next stage. The core of the MEGAP  is a Python script (`MEGAP.py`) that orchestrates the entire pre-processing workflow. This script imports all necessary modules and executes each step sequentially, from data initialization to final artifact removal. Below is a snippet of the script showcasing its structure and functionality.
 
-```
+```python
 subject_ids = list_files()
 
 for subject_id in subject_ids:
@@ -65,7 +65,7 @@ While defaults are optimized for most datasets, MEGAP allows users to adjust par
 The `config` folder in MEGAP houses all files required to customize and control the pipeline’s behavior. Located at `result/config/`, it includes the primary configuration file (`pipeline_config.cfg`), which defines parameters for each processing step. By centralizing settings and resources, the `config` folder ensures reproducibility, simplifies adjustments, and maintains a clean separation between raw data, outputs, and pipeline logic.
 
 {% code overflow="wrap" %}
-```
+```json
 "filter_chpi": {
     "include_line": false,
     "t_step": 0.001,
@@ -154,7 +154,7 @@ Closing /MEGAP/result/multi_taper_removal/sub-CC10.fif
 
 MEGAP includes a warning system to simplify pre-processing reporting and ensure data quality. This system generates a warning text file in the `result/warning/` folder, which flags potential issues based on user-defined thresholds. These thresholds are specified in the `pipeline_config.cfg` file under the `warning` section, allowing users to customize sensitivity for various metrics. For example:
 
-```markup
+```json
 "warning": {
     "muscle": 10,        # Percentage of data affected by muscle artifacts
     "movement": 0.003,   # Maximum head movement (in meters)
