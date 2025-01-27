@@ -20,6 +20,7 @@
   * [Zapline\_Plus](getting-started/integrations/zapline_plus.md)
   * [Regression](getting-started/integrations/regression.md)
 * [Muscle Artifact](getting-started/muscle-artifact.md)
+* [Bad sensors](getting-started/bad-sensors.md)
 
 ***
 
