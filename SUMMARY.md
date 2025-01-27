@@ -13,6 +13,6 @@
 * [Installation](getting-started/editor.md)
 * [Extraneous Data](getting-started/markdown.md)
 * [Flat sensors](getting-started/images-and-media.md)
-* [Interactive blocks](getting-started/interactive-blocks.md)
+* [Head Position](getting-started/interactive-blocks.md)
 * [OpenAPI](getting-started/openapi.md)
 * [Integrations](getting-started/integrations.md)
