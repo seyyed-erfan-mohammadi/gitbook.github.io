@@ -23,6 +23,10 @@ data.compute_psd().plot()
 
 <figure><img src="../.gitbook/assets/flat.png" alt="Example of Flat sensors on PSD plot" width="563"><figcaption><p>Damped power spectrum with one flat sensor</p></figcaption></figure>
 
+{% hint style="info" %}
+If the MNE library introduces a scaling parameter for the y-axis in [PSD plots](https://mne.tools/stable/generated/mne.time_frequency.Spectrum.html#mne.time_frequency.Spectrum.plot), the MEGAP pipeline could be updated to leverage this feature.&#x20;
+{% endhint %}
+
 To identify flat sensors based on [PyPREP](https://github.com/sappelhoff/pyprep), the code first detects channels containing NaN values, which indicate missing or corrupted data. It then flags channels with flat signals by evaluating two criteria: Median Absolute Deviation (MAD) and Standard Deviation (STD). Channels with MAD or STD values below a predefined threshold (`flat_threshold = 1e-15`) are considered flat, as they exhibit no meaningful signal variation.&#x20;
 
 ```python
