@@ -15,6 +15,8 @@ layout:
 
 # Installing
 
+MEGAP has been tested on Windows 10 (Intel i7-1156G7 CPU, 24GB RAM) and macOS (M1 chip, 8GB RAM). While GPU acceleration is not essential, adequate storage is critical: for a dataset with _N MB_ per subject, allocate at least N×8 storage for MEGIN systems or N×6 for CTF/BTI systems to accommodate BIDS-compliant outputs. The pipeline also tested with Python 3.10 and integrates with MATLAB 2023b/2024a for specific module (ZapLine-plus). These specifications ensure MEGAP remains accessible for both high-performance and standard computing environments while maintaining scalability for large-scale studies.
+
 {% stepper %}
 {% step %}
 ### **Clone the Repository**
