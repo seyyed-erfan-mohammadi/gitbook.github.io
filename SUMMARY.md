@@ -22,6 +22,7 @@
 * [Muscle Artifact](getting-started/muscle-artifact.md)
 * [Bad Sensors](getting-started/bad-sensors.md)
 * [Squid Jumps](getting-started/squid-jumps.md)
+* [Environment Denoising](getting-started/environment-denoising.md)
 
 ***
 
