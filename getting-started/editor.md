@@ -84,6 +84,6 @@ MEGAP will automatically verify all necessary folders and notify you if anything
 {% step %}
 ### Outputs
 
-Upon completion of the pipeline, the output power spectra plots can be found in the ‘PSD’ folder, and the output text files will be saved in the ‘verbose’ folder. Any warnings generated during processing are stored in the ‘warning’ folder, while the final pre-processed data, including Independent Component Analysis (ICA) results, is located in the ‘ICA’ folder.
+Upon completion of the pipeline, the output power spectra plots can be found in the ‘PSD’ folder, and the output text files will be saved in the ‘verbose’ folder. Any warnings generated during processing are stored in the ‘warning’ folder, while the final pre-processed data, including ICA results, is located in the ‘ICA’ folder.
 {% endstep %}
 {% endstepper %}
