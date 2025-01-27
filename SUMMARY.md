@@ -12,7 +12,7 @@
 
 * [Installation](getting-started/editor.md)
 * [Extraneous Data](getting-started/markdown.md)
-* [Images & media](getting-started/images-and-media.md)
+* [Flat sensors](getting-started/images-and-media.md)
 * [Interactive blocks](getting-started/interactive-blocks.md)
 * [OpenAPI](getting-started/openapi.md)
 * [Integrations](getting-started/integrations.md)
