@@ -1,5 +1,5 @@
 ---
-icon: markdown
+icon: '1'
 ---
 
 # Markdown

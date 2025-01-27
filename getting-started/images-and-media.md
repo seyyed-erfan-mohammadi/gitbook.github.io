@@ -1,5 +1,5 @@
 ---
-icon: image-landscape
+icon: '2'
 ---
 
 # Images & media

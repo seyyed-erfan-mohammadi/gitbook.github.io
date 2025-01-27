@@ -6,6 +6,7 @@
 
 * [Core Features](basic-information/quickstart.md)
 * [Folder Structure](basic-information/folder-structure.md)
+* [BIDS Format](basic-information/bids-format.md)
 
 ## Getting Started
 
