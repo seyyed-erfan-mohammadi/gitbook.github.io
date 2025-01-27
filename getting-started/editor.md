@@ -15,7 +15,7 @@ layout:
 
 # Installing
 
-MEGAP has been tested on Windows 10 (Intel i7-1156G7 CPU, 24GB RAM) and macOS (M1 chip, 8GB RAM). While GPU acceleration is not essential, adequate storage is critical: for a dataset with _N MB_ per subject, allocate at least N×8 storage for MEGIN systems or N×6 for CTF/BTI systems to accommodate BIDS-compliant outputs. The pipeline also tested with Python 3.10 and integrates with MATLAB 2023b/2024a for specific module (ZapLine-plus). These specifications ensure MEGAP remains accessible for both high-performance and standard computing environments while maintaining scalability for large-scale studies.
+MEGAP has been evaluated on Windows 10 (Intel i7-1156G7 CPU, 24GB RAM) and macOS (M1 chip, 8GB RAM). Although GPU acceleration is not required, sufficient storage is crucial: for a dataset size of N MB per subject, ensure at least N×7 storage for MEGIN systems or N×5 for CTF/BTI systems to accommodate BIDS-compliant outputs. The pipeline has been tested with Python 3.10 and supports integration with MATLAB 2023b/2024a for modules such as ZapLine-plus. To install MEGAP, follow these steps:
 
 {% stepper %}
 {% step %}
@@ -84,6 +84,6 @@ MEGAP will automatically verify all necessary folders and notify you if anything
 {% step %}
 ### Outputs
 
-Upon completion of the pipeline, the output power spectra plots can be located in the ‘PSD’ folders, while the output text files will be found in the ‘verbose’ folder.&#x20;
+Upon completion of the pipeline, the output power spectra plots can be found in the ‘PSD’ folder, and the output text files will be saved in the ‘verbose’ folder. Any warnings generated during processing are stored in the ‘warning’ folder, while the final pre-processed data, including Independent Component Analysis (ICA) results, is located in the ‘ICA’ folder.
 {% endstep %}
 {% endstepper %}
