@@ -14,6 +14,6 @@
 * [Extraneous Data](getting-started/markdown.md)
 * [Flat sensors](getting-started/images-and-media.md)
 * [Head Position](getting-started/interactive-blocks/README.md)
-  * [Movement Threshold](getting-started/interactive-blocks/movement-threshold.md)
+  * [Movement Check](getting-started/interactive-blocks/movement-check.md)
 * [OpenAPI](getting-started/openapi.md)
 * [Integrations](getting-started/integrations.md)
