@@ -20,6 +20,6 @@ layout:
 
 # Bridging the MEG Gap
 
-Traditional pre-processing workflows are fragmented, labor-intensive, and prone to inconsistencies—especially for large-scale datasets. Enter MEGAP (MEG Automatic Pipeline), a groundbreaking solution designed to bridge this critical gap. By automating noise removal, artifact correction, and standardization, MEGAP transforms the chaos of raw MEG data into clean, reproducible outputs. This pipeline not only addresses the limitations of existing tools—such as manual parameter tuning, incomplete artifact handling, and reliance on outdated filtering methods—but also empowers researchers to unlock the full potential of MEG with unprecedented efficiency.
+Traditional MEG pre-processing workflows often feel fragmented, time-consuming, and challenging to standardize, particularly when working with large datasets. MEGAP (MEG Automatic Pipeline) offers a seamless solution to these challenges. By automating tasks such as noise removal, artifact correction, and data standardization, MEGAP transforms raw MEG data into clean, consistent, and ready-to-use outputs. It addresses common limitations like manual parameter adjustments, incomplete artifact management, and outdated filtering techniques, providing researchers with an efficient and modern approach to MEG analysis.
 
-Welcome to the future of MEG pre-processing. Let’s close the gap!
+With MEGAP, pre-processing becomes faster, more reliable, and easier to replicate—unlocking the true potential of your MEG data. Welcome to a new era of MEG pre-processing!
