@@ -21,7 +21,7 @@ Flat sensors dampen the graphs due to their abnormal amplitude when plotting the
 data.compute_psd().plot()
 ```
 
-<figure><img src="../.gitbook/assets/flat.png" alt="Example of Flat sensors on PSD plot" width="563"><figcaption><p>Damped power spectrum with one flat sensor</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/flat.png" alt="Example of Flat sensors on PSD plot"><figcaption><p>Damped power spectrum with one flat sensor</p></figcaption></figure>
 
 {% hint style="info" %}
 If the MNE library introduces a scaling parameter for the y-axis in [PSD plots](https://mne.tools/stable/generated/mne.time_frequency.Spectrum.html#mne.time_frequency.Spectrum.plot), the MEGAP pipeline could be updated to leverage this feature.&#x20;
