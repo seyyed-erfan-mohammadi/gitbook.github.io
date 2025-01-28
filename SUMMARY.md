@@ -24,7 +24,3 @@
 * [Squid Jumps](getting-started/squid-jumps.md)
 * [Environment Denoising](getting-started/environment-denoising.md)
 * [Artifacts Removal](getting-started/artifacts-removal.md)
-
-***
-
-* [Page 1](page-1.md)

@@ -63,3 +63,5 @@ If you need to adjust the minimum frequency operation, you can modify the script
 
 #### Zapline\_plus Warning
 
+In MEGAP, a warning will be triggered during the zapline\_plus line noise removal process if the number of removed components for each coil type exceeds the specified threshold. The warning will be stored in the "warning" section of the results directory, allowing users to monitor and address potential issues with the line noise removal procedure. The threshold can be adjusted in the configuration file.
+
