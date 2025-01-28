@@ -19,7 +19,7 @@ If you're unfamiliar with the [BIDS (Brain Imaging Data Structure) standard](htt
 
 The configuration file for the MEGAP pipeline is written in JSON format and consists of two key sections: **`BIDS_structure_read`** and **`BIDS_structure_write`**. These sections allow users to specify parameters for reading from and writing to BIDS-compliant datasets.
 
-**`BIDS_structure_read`**
+### **`BIDS_structure_read`**
 
 This section specifies parameters required for reading data from the BIDS dataset:
 
@@ -39,7 +39,7 @@ This section specifies parameters required for reading data from the BIDS datase
 * **`datatype`**: Specifies the data type (e.g., "meg").
 * **`extension`**: Indicates the file extension (e.g., ".fif" for MEG data in FIFF format).
 
-**`BIDS_structure_write`**
+### **`BIDS_structure_write`**
 
 This section defines parameters for organizing and saving preprocessed outputs in the BIDS format:
 

@@ -23,6 +23,7 @@
 * [Bad Sensors](getting-started/bad-sensors.md)
 * [Squid Jumps](getting-started/squid-jumps.md)
 * [Environment Denoising](getting-started/environment-denoising.md)
+* [Artifacts Removal](getting-started/artifacts-removal.md)
 
 ***
 
