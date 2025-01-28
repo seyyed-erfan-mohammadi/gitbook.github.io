@@ -15,7 +15,7 @@ layout:
 
 # Bad Sensors
 
-### MEGIN Devices
+### MEGIN Systems
 
 Bad sensors can significantly affect the (pre)processing steps. In MEGAP, the [find\_bad\_channels\_maxwell](https://mne.tools/stable/generated/mne.preprocessing.find_bad_channels_maxwell.html) function from the MNE library is used to identify bad sensors for MEGIN system. The parameters for this step are the same as those used in the pipeline's tSSS stage. These parameters can be found in the "bad\_channel\_maxwell" section of the configuration file.
 
@@ -35,7 +35,7 @@ The locations of bad sensors and their scores are plotted and saved in the `/plo
 
 <figure><img src="../.gitbook/assets/figure 5.png" alt=""><figcaption><p>(A) Locations of magnetometer sensors (the bad sensor is represented in red), (B) and (C) magnetometers’ scores before and after applying the threshold, respectively.</p></figcaption></figure>
 
-### CTF/BTI Devices
+### CTF/BTI Systems
 
 For CTF and BTI devices, where Maxwell filtering isn't available, bad sensors are identified using several methods:
 
