@@ -39,7 +39,7 @@ The MEGAP pipeline organizes its outputs within a structured directory system to
 ├── zapline_plus/
 ├── PSD_zapline/
 ├── multitaper_removal/
-├── PSD_ multitaper_removal/
+├── PSD_multitaper_removal/
 ├── annotate_muscle/
 ├── plot_muscle_zscore/
 ├── bad_channel/
@@ -50,8 +50,8 @@ The MEGAP pipeline organizes its outputs within a structured directory system to
 │
 ├── OTP/
 ├── PSD_OTP/
-├── filter_maxwell/
-├── PSD_filter_maxwell/
+├── environment_denoising/
+├── PSD_environment_denoising/
 ├── ICA/
 ├── PSD_ICA/
 ├── plot_ICA/
@@ -140,10 +140,10 @@ Contains raw MEG signals organized in the BIDS format, ensuring compatibility wi
 
 <details>
 
-<summary> <strong>Maxwell Filtering:<code>filter_maxwell/</code></strong></summary>
+<summary> Environment Denoising<strong>:</strong></summary>
 
-* **`filter_maxwell/`**: Results from the Maxwell filtering process to reduce noise.
-* **`PSD_filter_maxwell/`**: PSD results post-Maxwell filtering.
+* **`environment_denoising/`**: Results from the environment denoising process to reduce noise.
+* **`PSD_environment_denoising/`**: PSD results of environment denoising.
 
 </details>
 
