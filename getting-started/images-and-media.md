@@ -27,7 +27,7 @@ data.compute_psd().plot()
 If the MNE library introduces a scaling parameter for the y-axis in [PSD plots](https://mne.tools/stable/generated/mne.time_frequency.Spectrum.html#mne.time_frequency.Spectrum.plot), the MEGAP pipeline could be updated to leverage this feature.&#x20;
 {% endhint %}
 
-To identify flat sensors based on [PREP](https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2015.00016/full), the code first detects channels containing NaN values, which indicate missing or corrupted data. It then flags channels with flat signals by evaluating two criteria: Median Absolute Deviation (MAD) and Standard Deviation (STD). Channels with MAD or STD values below a predefined threshold (`flat_threshold = 1e-18`) are considered flat, as they exhibit no meaningful signal variation.&#x20;
+To identify flat sensors based on [PREP](https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2015.00016/full), the code first detects channels containing NaN values, which indicate missing or corrupted data. It then flags channels with flat signals by evaluating two criteria: Median Absolute Deviation (MAD) and Standard Deviation (STD). Channels with MAD or STD values below a predefined threshold ([`flat_threshold = 1e-18`](https://mne.tools/stable/generated/mne.preprocessing.find_bad_channels_maxwell.html#mne.preprocessing.find_bad_channels_maxwell)) are considered flat, as they exhibit no meaningful signal variation.&#x20;
 
 ```python
 meg_picks_diff =  mne.pick_types(raw_meg.info, meg=True, ref_meg=False)
