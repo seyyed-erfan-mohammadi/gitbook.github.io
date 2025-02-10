@@ -27,7 +27,7 @@ data.compute_psd().plot()
 If the MNE library introduces a scaling parameter for the y-axis in [PSD plots](https://mne.tools/stable/generated/mne.time_frequency.Spectrum.html#mne.time_frequency.Spectrum.plot), the MEGAP pipeline could be updated to leverage this feature.&#x20;
 {% endhint %}
 
-To identify flat sensors based on [PREP](https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2015.00016/full), the code first detects channels containing NaN values, which indicate missing or corrupted data. It then flags channels with flat signals by evaluating two criteria: Median Absolute Deviation (MAD) and Standard Deviation (STD). Channels with MAD or STD values below a predefined threshold (`flat_threshold = 1e-16`) are considered flat, as they exhibit no meaningful signal variation.&#x20;
+To identify flat sensors based on [PREP](https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2015.00016/full), the code first detects channels containing NaN values, which indicate missing or corrupted data. It then flags channels with flat signals by evaluating two criteria: Median Absolute Deviation (MAD) and Standard Deviation (STD). Channels with MAD or STD values below a predefined threshold (`flat_threshold = 1e-18`) are considered flat, as they exhibit no meaningful signal variation.&#x20;
 
 ```python
 meg_picks_diff =  mne.pick_types(raw_meg.info, meg=True, ref_meg=False)
@@ -36,7 +36,7 @@ ch_names = [raw_meg.ch_names[i] for i in meg_picks_diff]
 # Detect channels containing any NaN values
 nan_channel_mask = np.isnan(np.sum(meg_data, axis=1))
 nan_channels = np.array(ch_names)[nan_channel_mask]
-flat_threshold=1e-16
+flat_threshold=1e-18
 # Detect channels with flat signals
 flat_by_mad = median_abs_deviation(meg_data, axis=1) < flat_threshold
 flat_by_std = np.std(meg_data, axis=1) < flat_threshold
