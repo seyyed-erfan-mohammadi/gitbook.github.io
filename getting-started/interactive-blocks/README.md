@@ -33,7 +33,7 @@ Parameters for this step can be adjusted in the `pipeline_config.cfg`:
         "tmax": null
     },
     "locs": {
-        "t_step_max": 3,
+        "t_step_max": 1,
         "too_close": "raise",
         "adjust_dig": false
     },
