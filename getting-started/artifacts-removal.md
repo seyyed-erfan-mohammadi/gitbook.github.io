@@ -27,7 +27,7 @@ The artifact detection process in MEGAP involves automating the identification o
 The downsampling and low-pass filtering are applied only for the ICA procedure and do not affect the final data. MEGAP does not apply any low-pass filtering to the original data.
 {% endhint %}
 
-The output of this step is organized according to the [BIDS format](../basic-information/bids-format.md). To modify the artifact detection settings for ICA in MEGAP, users can adjust the configuration file under the `ica_decomposition` section.
+The output of this step is organized according to the [BIDS format](../basic-information/bids-format.md). To modify the artifact detection settings for ICA in MEGAP, users can adjust the configuration file under the `ica_decomposition` section. If users want to focus on a specific segment for component rejection, they can change the start and stop parameters in the configuration file for this purpose.
 
 ```json
 "ica_decomposition": {
@@ -37,6 +37,11 @@ The output of this step is organized according to the [BIDS format](../basic-inf
     "reject_by_annotation" : true,
     "method" : "correlation"
     }
+    "apply": {
+    "start" : null,
+    "stop" : null
+    }
+}
 ```
 
 ### Warning for Number of Artifact components
