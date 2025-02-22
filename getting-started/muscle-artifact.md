@@ -38,6 +38,8 @@ The parameters for muscle artifact detection in MEGAP are customizable and locat
 Magnetometers are specifically selected for detecting muscle artifacts because they are more sensitive to muscle activity compared to other sensor types.
 {% endhint %}
 
+<figure><img src="../.gitbook/assets/muscle z-score.png" alt=""><figcaption><p>The Z-score example plot for a single subject, saved in the MEGAP results folder</p></figcaption></figure>
+
 #### Muscle Duration Warning
 
 The annotation period for muscle artifacts is evaluated to ensure that the duration of the affected segments does not exceed a specified percentage of the total data. This threshold is defined in the [**"warning"**](../basic-information/quickstart.md#id-7.-warning-for-data-quality-monitoring) section of the pipeline configuration file.
