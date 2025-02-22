@@ -11,8 +11,8 @@
 ## Getting Started
 
 * [Installation](getting-started/editor.md)
-* [Extraneous Data](getting-started/markdown.md)
 * [Flat sensors](getting-started/images-and-media.md)
+* [Extraneous Data](getting-started/markdown.md)
 * [Head Position](getting-started/interactive-blocks/README.md)
   * [Movement Check](getting-started/interactive-blocks/movement-check.md)
 * [Filter cHPI](getting-started/openapi.md)
