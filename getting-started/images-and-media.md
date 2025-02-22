@@ -27,6 +27,8 @@ data.compute_psd().plot()
 The MNE library's function for [plotting PSD](https://mne.tools/stable/generated/mne.time_frequency.Spectrum.html#mne.time_frequency.Spectrum.plot) does not include built-in parameters to disable autoscaling or manually rescale the y-axis.
 {% endhint %}
 
+<figure><img src="../.gitbook/assets/MEGAP flat sensor.png" alt=""><figcaption><p>MEGAP output power spectrum with warning massage</p></figcaption></figure>
+
 To identify flat sensors based on [PREP](https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2015.00016/full), the code first detects channels containing NaN values, which indicate missing or corrupted data. It then flags channels with flat signals by evaluating two criteria: Median Absolute Deviation (MAD) and Standard Deviation (STD). Channels with MAD or STD values below a predefined threshold ([`flat_threshold = 1e-18`](https://mne.tools/stable/generated/mne.preprocessing.find_bad_channels_maxwell.html#mne.preprocessing.find_bad_channels_maxwell) `T or T/m`) are considered flat, as they exhibit no meaningful signal variation.&#x20;
 
 ```python
