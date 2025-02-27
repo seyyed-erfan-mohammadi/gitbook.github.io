@@ -50,8 +50,8 @@ The MEGAP pipeline organizes its outputs within a structured directory system to
 │
 ├── OTP/
 ├── PSD_OTP/
-├── environment_denoising/
-├── PSD_environment_denoising/
+├── environment_noise/
+├── PSD_environment_noise/
 ├── ICA/
 ├── PSD_ICA/
 ├── plot_ICA/
@@ -140,10 +140,10 @@ Contains raw MEG signals organized in the BIDS format, ensuring compatibility wi
 
 <details>
 
-<summary> Environment Denoising<strong>:</strong></summary>
+<summary> Environment Noise<strong>:</strong></summary>
 
-* **`environment_denoising/`**: Results from the environment denoising process to reduce noise.
-* **`PSD_environment_denoising/`**: PSD results of environment denoising.
+* **`environment_noise/`**: Results from the environment denoising process to reduce noise.
+* **`PSD_environment_noise/`**: PSD results of environment denoising.
 
 </details>
 
