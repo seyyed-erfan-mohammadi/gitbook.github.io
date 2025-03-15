@@ -1,5 +1,4 @@
 ---
-icon: hand-wave
 cover: .gitbook/assets/llogo_dark (2).png
 coverY: 0
 layout:
