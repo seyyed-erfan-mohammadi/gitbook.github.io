@@ -55,4 +55,4 @@ This section defines parameters for organizing and saving preprocessed outputs i
 
 * The same parameters are used as in the **`BIDS_structure_read`** section, ensuring consistency between the input and output data structures.
 
-To ensure the MEGAP pipeline runs correctly, users must first complete the **`BIDS_structure_read`** and **`BIDS_structure_write`** sections in the configuration file. If any of the configuration fields are not required for your specific dataset, you can set them to `null`.
+To ensure the MEGAP runs correctly, users must first complete the **`BIDS_structure_read`** and **`BIDS_structure_write`** sections in the configuration file. If any of the configuration fields are not required for your specific dataset, you can set them to `null`.
