@@ -23,7 +23,7 @@ MEGAP is designed to address the challenges of large-scale MEG data pre-processi
 
 MEGAP runs seamlessly from start to finish without requiring manual intervention, minimizing human error and accelerating workflows. This ensures consistency across datasets, even in studies with hundreds of participants.
 
-MEGAP processes data through a structured sequence of pre-defined steps (e.g., noise removal, artifact correction), applying each step to all subjects in a dataset before advancing to the next stage. The core of the MEGAP  is a Python script (`MEGAP.py`) that orchestrates the entire pre-processing workflow. This script imports all necessary modules and executes each step sequentially, from data initialization to final artifact removal. Below is a snippet of the script showcasing its structure and functionality.
+MEGAP pre-processes data through a structured sequence of pre-defined steps (e.g., noise removal, artifact correction), applying each step to all subjects in a dataset before advancing to the next stage. The core of the MEGAP  is a Python script (`MEGAP.py`) that orchestrates the entire pre-processing workflow. This script imports all necessary modules and executes each step sequentially, from data initialization to final artifact removal. Below is a snippet of the script showcasing its structure and functionality.
 
 ```python
 subject_ids = list_files()
@@ -93,7 +93,7 @@ The `config` folder in MEGAP houses all files required to customize and control 
 
 <summary>3. <strong>Organized Output</strong></summary>
 
-The MEGAP pipeline requires input data to be organized in the Brain Imaging Data Structure (BIDS) format, located in the `/raw/` folder, ensuring consistency and compatibility with neuroimaging standards. All outputs are systematically organized into participant-specific folders within the `result/` directory, following the MEG-BIDS extension for final processed data. This structured approach ensures seamless integration with downstream tools and simplifies data sharing and collaboration.
+The MEGAP pipeline requires input data to be organized in the Brain Imaging Data Structure (BIDS) format, located in the `/raw/` folder, ensuring consistency and compatibility with neuroimaging standards. All outputs are systematically organized into participant-specific folders within the `result/` directory, following the MEG-BIDS extension for final pre-processed data. This structured approach ensures seamless integration with downstream tools and simplifies data sharing and collaboration.
 
 For a full breakdown of the folder structure and BIDS conventions, see [MEGAP Folder Structure Documentation](folder-structure.md).
 
@@ -103,7 +103,7 @@ For a full breakdown of the folder structure and BIDS conventions, see [MEGAP Fo
 
 <summary>4. I<strong>ntermediate Saving Points</strong></summary>
 
-MEGAP saves outputs at every processing stage, allowing users to restart or resume the pipeline from any intermediate point. This capability is particularly valuable for debugging, fine-tuning parameters, or managing interruptions in large-scale analyses. Outputs from each function are systematically stored in dedicated, function-specific folders (e.g., `/filter_chpi/`), ensuring organized and easily traceable results.
+MEGAP saves outputs at every pre-processing stage, allowing users to restart or resume the pipeline from any intermediate point. This capability is particularly valuable for debugging, fine-tuning parameters, or managing interruptions in large-scale analyses. Outputs from each function are systematically stored in dedicated, function-specific folders (e.g., `/filter_chpi/`), ensuring organized and easily traceable results.
 
 The script is built to handle interruptions seamlessly, enabling users to pick up from the last completed step without reprocessing. Additionally, users can customize workflows by commenting out unnecessary steps in the main script, providing flexibility while maintaining the pipeline’s automated structure.
 
@@ -113,7 +113,7 @@ The script is built to handle interruptions seamlessly, enabling users to pick u
 
 <summary>5. <strong>Step-Wise Results Visualization</strong></summary>
 
-At every stage of the MEGAP pipeline, visual summaries (e.g., power spectra, sensor topography plots) are automatically generated to provide immediate feedback on the results. These plots, such as PSDs  before and after noise removal, allow users to visually verify the effectiveness of each step, ensuring transparency and confidence in the pre-processing outcomes.&#x20;
+At every stage of the MEGAP pipeline, visual summaries (e.g., power spectra, sensor topography plots) are automatically generated to provide immediate feedback on the results. These plots, such as PSDs before and after noise removal, allow users to visually verify the effectiveness of each step, ensuring transparency and confidence in the pre-processing outcomes.&#x20;
 
 </details>
 
