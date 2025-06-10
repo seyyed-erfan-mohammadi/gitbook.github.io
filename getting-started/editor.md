@@ -51,7 +51,7 @@ Clone the following repositories into the `/config` folder of MEGAP:
 {% step %}
 ### **Add Data to MEGAP**
 
-Place MEG data organized in the MEG-BIDS structure into the `result/raw` folder of MEGAP. Additionally, include the fine calibration file and a cross-talk compensation file in the `result/config` folder. Also see [BIDS Format](../basic-information/bids-format.md) for completing configuration file.&#x20;
+Place MEG data organized in the MEG-BIDS structure into the `result/raw` folder of MEGAP. Additionally, include the fine calibration file and a cross-talk compensation file in the `result/config` folder for MEGIN systems. Also see [BIDS Format](../basic-information/bids-format.md) for completing configuration file.&#x20;
 {% endstep %}
 
 {% step %}
