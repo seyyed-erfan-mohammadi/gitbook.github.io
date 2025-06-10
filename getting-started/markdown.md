@@ -15,7 +15,7 @@ layout:
 
 # Extraneous Data
 
-In the early stages of the MEGAP pipeline, data segments containing extraneous information are excluded to ensure the integrity of subsequent analyses. These extraneous segments are typically associated with:
+In the early stages of the MEGAP, data segments containing extraneous information are excluded to ensure the integrity of subsequent analyses. These extraneous segments are typically associated with:
 
 1. **MEG Device Initialization**: At the start of a recording session, the MEG device performs internal checks and verifies parameters. This period does not contain meaningful brain signal data and must be removed.
 2. **cHPI Coil Start-Up**: cHPI coils require time to stabilize and start accurately tracking head movements. Signals recorded during this interval are also excluded.
