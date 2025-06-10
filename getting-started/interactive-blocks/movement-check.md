@@ -35,7 +35,7 @@ The generated head position plots are saved in the `plot_head_pos` folder within
 
 #### Head Movement Warning
 
-In the MEGAP pipeline, if the head movement exceeds a specified threshold, a warning is generated. This threshold is defined in the [`config_pipeline.cfg`](../../basic-information/quickstart.md#id-7.-warning-for-data-quality-monitoring) . When head movement surpasses this limit, the pipeline stores the warning in the `/warning` folder within the results directory. This allows users to easily track and address potential issues related to excessive head movement without checking verbose files.
+In the MEGAP, if the head movement exceeds a specified threshold, a warning is generated. This threshold is defined in the [`config_pipeline.cfg`](../../basic-information/quickstart.md#id-7.-warning-for-data-quality-monitoring) . When head movement surpasses this limit, the pipeline stores the warning in the `/warning` folder within the results directory. This allows users to easily track and address potential issues related to excessive head movement without checking verbose files.
 
 {% hint style="info" %}
 If the data does not contain cHPI coils, this procedure for checking head movement will be skipped.
