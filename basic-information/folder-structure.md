@@ -15,7 +15,7 @@ layout:
 
 # Folder Structure
 
-The MEGAP pipeline organizes its outputs within a structured directory system to streamline processing, analysis, and storage of MEG data. The top-level directory, named `result`, serves as the root for all pipeline-generated files and subfolders. Below is a detailed explanation of the structure and purpose of each folder:
+The MEGAP organizes its outputs within a structured directory system to streamline processing, analysis, and storage of MEG data. The top-level directory, named `result`, serves as the root for all pipeline-generated files and subfolders. Below is a detailed explanation of the structure and purpose of each folder:
 
 ```
 /result/ 
@@ -79,7 +79,7 @@ The `config` folder contains essential files, repositories, and configuration pa
 * **`zapline-plus-main/`**: [Zapline-plus](https://github.com/MariusKlug/zapline-plus) repository from GitHub for filtering line noise.
 * **`MegNET_2020-main/`**: Pretrained [MEGNet\_2020](https://github.com/DeepLearningForPrecisionHealthLab/MegNET_2020) model for automatic artifact detection in ICA.
 * **`Pipeline_config.cfg`**: The configuration file specifying parameters for running the pipeline.
-* **`Ct_sparse.fif` & `sss_cal.dat`**: Calibration and crosstalk compensation files required for MEGIN system .
+* **`Ct_sparse.fif` & `sss_cal.dat`**: Calibration and crosstalk compensation files required for MEGIN system.
 
 </details>
 
@@ -96,12 +96,12 @@ Contains raw MEG signals organized in the BIDS format, ensuring compatibility wi
 <summary><strong>Intermediate Data</strong></summary>
 
 * **`data/`**: Stores output from the first pipeline step, with extraneous data removed.
-* **`PSD_data/`**: Power spectral density (PSD) of the cleaned data.
-* **`flat_channel/`**: Contains information about flat channels identified during preprocessing.
+* **`PSD_data/`**: Power spectral density (PSD) of the data.
+* **`flat_channel/`**: Contains information about flat channels identified during pre-processing.
 * **`head_position/`**: Tracks head movement data across recordings.
-* **`plot_head_pos/`**: Visualizations of head position data, providing insights into participant stability.
+* **`plot_head_pos/`**: Visualizations of head position data.
 * **`filter_chpi/`**: Contains filtered continuous head positioning indicator (cHPI) data.
-* **`PSD_filter_chpi/`**: PSD results post-cHPI filtering.
+* **`PSD_filter_chpi/`**: PSD results of post-cHPI filtering.
 
 </details>
 
@@ -120,7 +120,7 @@ Contains raw MEG signals organized in the BIDS format, ensuring compatibility wi
 
 <summary><strong>Detection and Annotation</strong></summary>
 
-* **`annotate_muscle/`**: Stores muscle artifact annotations generated during processing.
+* **`annotate_muscle/`**: Stores muscle artifact annotations generated during pre-processing.
 * **`plot_muscle_zscore/`**: Z-score plots of magnetometer data for muscle artifact detection.
 * **`bad_channel/`**: Contains information about identified bad channels.
 * **`plot_bad_channel/`**: Visual representations of bad channels, including:
@@ -142,7 +142,7 @@ Contains raw MEG signals organized in the BIDS format, ensuring compatibility wi
 
 <summary> Environment Noise<strong>:</strong></summary>
 
-* **`environment_noise/`**: Results from the environment denoising process to reduce noise.
+* **`environment_noise/`**: Results from the environment denoising process.
 * **`PSD_environment_noise/`**: PSD results of environment denoising.
 
 </details>
@@ -164,7 +164,7 @@ Contains raw MEG signals organized in the BIDS format, ensuring compatibility wi
 * **`signal_before_ica/`**: Data before ICA, stored in two formats:
   * **`Original/`**: Full-scale signal plots.
   * **`Zoomed/`**: Zoomed-in versions for detailed inspection.
-* **`signal_after_ica/`**: Preprocessed data after ICA, with similar subfolders for original and zoomed signals.
+* **`signal_after_ica/`**: Pre-processed data after ICA, with similar subfolders for original and zoomed signals.
 
 </details>
 
