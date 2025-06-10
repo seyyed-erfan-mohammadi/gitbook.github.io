@@ -17,7 +17,7 @@ layout:
 
 If you're unfamiliar with the [BIDS (Brain Imaging Data Structure) standard](https://www.nature.com/articles/sdata2018110), refer to the [MNE-BIDS documentation](https://mne.tools/mne-bids/stable/index.html) for more details on its structure and usage.
 
-The configuration file for the MEGAP pipeline is written in JSON format and consists of two key sections: **`BIDS_structure_read`** and **`BIDS_structure_write`**. These sections allow users to specify parameters for reading from and writing to BIDS-compliant datasets.
+The configuration file for the MEGAP is written in JSON format and consists of two key sections: **`BIDS_structure_read`** and **`BIDS_structure_write`**. These sections allow users to specify parameters for reading from and writing to BIDS-compliant datasets.
 
 ### **`BIDS_structure_read`**
 
