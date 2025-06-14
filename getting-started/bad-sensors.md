@@ -62,4 +62,4 @@ RANSAC is used from the [autoreject](https://autoreject.github.io/stable/index.h
 
 ### Warning on Number of Bad Sensors
 
-In the MEGAP pipeline, a warning is triggered if the number of bad sensors exceeds a defined threshold. This threshold is set in the [config\_pipeline.cfg](../basic-information/quickstart.md#id-7.-warning-for-data-quality-monitoring) file. When the number of bad sensors for each coil type (mag or grad) goes beyond the limit, the warning is saved in the `/warning` folder within the results directory.
+In the MEGAP, a warning is triggered if the number of bad sensors exceeds a defined threshold. This threshold is set in the [config\_pipeline.cfg](../basic-information/quickstart.md#id-7.-warning-for-data-quality-monitoring) file. When the number of bad sensors for each coil type (mag or grad) goes beyond the limit, the warning is saved in the `/warning` folder within the results directory.
